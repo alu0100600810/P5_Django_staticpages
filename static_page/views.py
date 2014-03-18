@@ -1,16 +1,9 @@
 from django.http import HttpResponse
-
-def home(request):
-	return HttpResponse("Buenos dias, estas en la pagina home")
-
-def help(request):
-        return HttpResponse("Buenos dias, estas en la pagina help")
-def about(request):
-        return HttpResponse("Buenos dias, estas en la pagina about")
+from django.shortcuts import render
 
 
-
-
+def home(request):	
+	return render(request,'home.html')
 
 
 # Create your views here.

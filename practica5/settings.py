@@ -9,6 +9,9 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+
+
+
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -36,7 +39,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'static_page'
+    'static_page',
+    'lettuce.django',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -52,6 +56,9 @@ ROOT_URLCONF = 'practica5.urls'
 
 WSGI_APPLICATION = 'practica5.wsgi.application'
 
+TEMPLATE_DIRS = (
+        '/home/ayose/dsi/Django/practica5/static_page/template',
+)
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
